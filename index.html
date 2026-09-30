@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jimon Lab | 自由は、つくれる。</title>
+  <meta name="description" content="研究職のJimonが、3Dプリント・SNS発信・note執筆・アプリ開発・ホームページ制作の5つの事業を実験するラボ。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">Jimon Lab</a>
+      <button class="menu-btn" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#labs">Labs</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- トップ -->
+    <section class="hero container">
+      <div class="hero__panel">
+        <div class="hero__text">
+          <p class="eyebrow">Our Vision</p>
+          <h1 class="hero__title">自由は、<br>つくれる。</h1>
+          <p class="hero__lead">お金も、時間も、働き方も。<br>仮説を立てて、試して、カタチにする。<br>Jimon Labは、誰もが自分の人生を<br class="sp-none">設計できる未来をつくる実験室です。</p>
+          <a href="#labs" class="btn">ラボを見る</a>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <!-- ブラウザ(ホームページ制作)・スマホ(アプリ/資産運用)・3Dプリント造形物を組み合わせたイラスト -->
+          <svg viewBox="0 0 520 440" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="metal" x1="0" x2="1" y1="0" y2="0">
+                <stop offset="0" stop-color="#6b7280"/>
+                <stop offset=".22" stop-color="#e5e7eb"/>
+                <stop offset=".45" stop-color="#9ca3af"/>
+                <stop offset=".7" stop-color="#f3f4f6"/>
+                <stop offset="1" stop-color="#4b5563"/>
+              </linearGradient>
+              <linearGradient id="metalTop" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#f9fafb"/>
+                <stop offset="1" stop-color="#9ca3af"/>
+              </linearGradient>
+              <linearGradient id="glass" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#ffffff"/>
+                <stop offset="1" stop-color="#e8eaee"/>
+              </linearGradient>
+              <linearGradient id="screen" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#1b2338"/>
+                <stop offset="1" stop-color="#0c1120"/>
+              </linearGradient>
+              <linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#7dd3fc" stop-opacity=".45"/>
+                <stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/>
+              </linearGradient>
+              <pattern id="layers" width="6" height="4" patternUnits="userSpaceOnUse">
+                <rect width="6" height="1" fill="#000" opacity=".13"/>
+              </pattern>
+              <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+                <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#0f172a" flood-opacity=".22"/>
+              </filter>
+            </defs>
+
+            <!-- ブラウザウィンドウ -->
+            <g filter="url(#shadow)">
+              <rect x="30" y="40" width="340" height="230" rx="14" fill="url(#glass)" stroke="#d6d9df"/>
+              <rect x="30" y="40" width="340" height="30" rx="14" fill="#f1f2f4"/>
+              <rect x="30" y="58" width="340" height="12" fill="#f1f2f4"/>
+              <circle cx="50" cy="55" r="4.5" fill="#cbd0d8"/>
+              <circle cx="64" cy="55" r="4.5" fill="#cbd0d8"/>
+              <circle cx="78" cy="55" r="4.5" fill="#cbd0d8"/>
+              <rect x="100" y="49" width="170" height="12" rx="6" fill="#e3e6ea"/>
+              <rect x="52" y="92" width="120" height="12" rx="3" fill="#1e2a4a"/>
+              <rect x="52" y="112" width="160" height="7" rx="3" fill="#c9ced6"/>
+              <rect x="52" y="125" width="130" height="7" rx="3" fill="#c9ced6"/>
+              <rect x="52" y="146" width="56" height="16" rx="4" fill="#1e2a4a"/>
+              <rect x="52" y="184" width="90" height="62" rx="6" fill="#e6e8ec"/>
+              <rect x="152" y="184" width="90" height="62" rx="6" fill="#e6e8ec"/>
+              <rect x="252" y="184" width="90" height="62" rx="6" fill="#e6e8ec"/>
+            </g>
+
+            <!-- スマホ(アプリ・資産チャート) -->
+            <g filter="url(#shadow)">
+              <rect x="318" y="96" width="150" height="286" rx="24" fill="#0b0f1a"/>
+              <rect x="326" y="104" width="134" height="270" rx="18" fill="url(#screen)"/>
+              <rect x="370" y="112" width="46" height="8" rx="4" fill="#0b0f1a"/>
+              <text x="340" y="146" fill="#94a3b8" font-family="Inter, sans-serif" font-size="9">PORTFOLIO</text>
+              <path d="M338 250 L356 238 L372 244 L390 222 L406 228 L424 200 L448 184 L448 262 L338 262 Z" fill="url(#chartFill)"/>
+              <path d="M338 250 L356 238 L372 244 L390 222 L406 228 L424 200 L448 184" fill="none" stroke="#7dd3fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="448" cy="184" r="4" fill="#7dd3fc"/>
+              <rect x="340" y="282" width="108" height="30" rx="8" fill="#1f2a44"/>
+              <rect x="350" y="292" width="44" height="6" rx="3" fill="#7dd3fc"/>
+              <rect x="350" y="302" width="64" height="4" rx="2" fill="#475569"/>
+              <rect x="340" y="320" width="108" height="30" rx="8" fill="#1f2a44"/>
+              <rect x="350" y="330" width="56" height="6" rx="3" fill="#c9a24b"/>
+              <rect x="350" y="340" width="40" height="4" rx="2" fill="#475569"/>
+            </g>
+
+            <!-- 3Dプリント造形物(積層痕のある金属調オブジェ) -->
+            <g filter="url(#shadow)">
+              <path d="M110 290 C110 262 250 262 250 290 L238 392 C238 414 122 414 122 392 Z" fill="url(#metal)"/>
+              <path d="M110 290 C110 262 250 262 250 290 L238 392 C238 414 122 414 122 392 Z" fill="url(#layers)"/>
+              <ellipse cx="180" cy="290" rx="70" ry="20" fill="url(#metalTop)"/>
+              <ellipse cx="180" cy="291" rx="46" ry="12" fill="#6b7280" opacity=".55"/>
+            </g>
+
+            <!-- 小さな記事カード(note執筆) -->
+            <g filter="url(#shadow)">
+              <rect x="10" y="300" width="92" height="104" rx="10" fill="#fff" stroke="#e1e4e8"/>
+              <rect x="22" y="314" width="50" height="8" rx="3" fill="#1e2a4a"/>
+              <rect x="22" y="330" width="68" height="5" rx="2" fill="#cbd0d8"/>
+              <rect x="22" y="340" width="60" height="5" rx="2" fill="#cbd0d8"/>
+              <rect x="22" y="350" width="66" height="5" rx="2" fill="#cbd0d8"/>
+              <rect x="22" y="378" width="30" height="12" rx="6" fill="#c9a24b"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <div class="section__head">
+        <h2>About</h2>
+        <p class="section__sub">代表あいさつ</p>
+      </div>
+      <div class="about">
+        <div class="about__avatar" aria-hidden="true">J</div>
+        <div class="about__body">
+          <p class="about__role">Founder &amp; CEO</p>
+          <p class="about__name">代表 Jimon</p>
+          <p>メーカーで研究職として働いています。</p>
+          <p>本業で培った「仮説を立てて、試して、数字で確かめる」やり方を、自分の人生とお金にも使ってみたい。そう思って始めたのが Jimon Lab です。3Dプリント、SNS発信、note執筆、アプリ開発、ホームページ制作。5つのラボで、FIREに向けた実験を続けています。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Labs -->
+    <section id="labs" class="section">
+      <div class="container section__head">
+        <h2>Labs</h2>
+        <p class="section__sub">5つの事業</p>
+      </div>
+      <div class="labs">
+        <div class="labs__track">
+          <article class="lab-card">
+            <div class="lab-card__visual lab-card__visual--3d"><span>01</span></div>
+            <div class="lab-card__body">
+              <p class="lab-card__no">Lab 01</p>
+              <h3>3Dプリント</h3>
+              <p>暮らしを少し便利にする小物を設計・製作し、メルカリ・minne・creemaで販売。</p>
+              <div class="lab-card__links"><span class="lab-card__link is-soon">準備中</span></div>
+            </div>
+          </article>
+          <article class="lab-card">
+            <div class="lab-card__visual lab-card__visual--sns"><span>02</span></div>
+            <div class="lab-card__body">
+              <p class="lab-card__no">Lab 02</p>
+              <h3>SNS発信</h3>
+              <p>FIREを目指す会社員として、投資と節約のリアルをX・Threadsで発信。</p>
+              <div class="lab-card__links">
+                <a class="lab-card__link" href="https://x.com/FIREJimon" target="_blank" rel="noopener">X →</a>
+                <a class="lab-card__link" href="https://www.threads.com/@invest4657m" target="_blank" rel="noopener">Threads →</a>
+              </div>
+            </div>
+          </article>
+          <article class="lab-card">
+            <div class="lab-card__visual lab-card__visual--note"><span>03</span></div>
+            <div class="lab-card__body">
+              <p class="lab-card__no">Lab 03</p>
+              <h3>note執筆</h3>
+              <p>資産形成の実体験とデータをもとに、記事を執筆・販売。</p>
+              <div class="lab-card__links"><a class="lab-card__link" href="https://note.com/investing4657" target="_blank" rel="noopener">note →</a></div>
+            </div>
+          </article>
+          <article class="lab-card">
+            <div class="lab-card__visual lab-card__visual--app"><span>04</span></div>
+            <div class="lab-card__body">
+              <p class="lab-card__no">Lab 04</p>
+              <h3>アプリ開発</h3>
+              <p>性格や将来の理想から、自分に合う投資を一緒に考えるAIアプリを開発中。</p>
+              <div class="lab-card__links"><span class="lab-card__link is-soon">準備中</span></div>
+            </div>
+          </article>
+          <article class="lab-card">
+            <div class="lab-card__visual lab-card__visual--web"><span>05</span></div>
+            <div class="lab-card__body">
+              <p class="lab-card__no">Lab 05</p>
+              <h3>ホームページ制作</h3>
+              <p>ホームページを持たない個人経営のお店に、シンプルで伝わるサイトを。</p>
+              <div class="lab-card__links"><a class="lab-card__link" href="#contact">相談する →</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section container">
+      <div class="section__head">
+        <h2>Services</h2>
+        <p class="section__sub">お仕事のご依頼</p>
+      </div>
+      <div class="services">
+        <article class="service-card">
+          <div class="service-card__visual service-card__visual--web"></div>
+          <div class="service-card__body">
+            <h3>ホームページ制作</h3>
+            <p>カフェや個人店向けに、スマホで見やすいサイトを制作します。</p>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-card__visual service-card__visual--3d"></div>
+          <div class="service-card__body">
+            <h3>3Dプリント製作</h3>
+            <p>オリジナル小物やパーツを、設計から製作までお受けします。</p>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-card__visual service-card__visual--app"></div>
+          <div class="service-card__body">
+            <h3>アプリ開発</h3>
+            <p>AIを使った小さな業務アプリ・Webアプリを開発します。</p>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-card__visual service-card__visual--asset"></div>
+          <div class="service-card__body">
+            <h3>資産運用の情報発信</h3>
+            <p>FIREを目指す実体験をもとに、資産運用の情報を発信しています。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <div class="section__head">
+        <h2>Contact</h2>
+        <p class="section__sub">お問い合わせ</p>
+      </div>
+      <form class="contact" novalidate>
+        <div class="contact__row">
+          <label>お名前<input type="text" name="name" placeholder="山田 太郎" required></label>
+          <label>メールアドレス<input type="email" name="email" placeholder="example@mail.com" required></label>
+        </div>
+        <label>ご依頼の種類
+          <select name="type">
+            <option>ホームページ制作</option>
+            <option>3Dプリント製作</option>
+            <option>アプリ開発</option>
+            <option>資産運用の情報発信</option>
+            <option>その他</option>
+          </select>
+        </label>
+        <label>お問い合わせ内容<textarea name="message" rows="5" placeholder="ご相談内容をご記入ください"></textarea></label>
+        <button type="submit" class="contact__submit">送信する</button>
+        <p class="contact__note" role="status"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">© Jimon Lab</div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
